@@ -24,7 +24,14 @@ function Dashboard() {
   }
 
 
- 
+function handle(){
+  logout()
+  setTimeout(() => {
+    navi('/')
+    location.reload()
+  }, 1000);
+}
+  
 
 
   return (
@@ -34,13 +41,13 @@ function Dashboard() {
       <div className="dashboard__container">
         logged in as
       
-        <div>{user.displayName}</div>
+        <div>{name}</div>
         <div>{user?.email}</div>
       </div>
     </div>
 
 
-    <button onClick={logout} className="dashbtnlogout">
+    <button onClick={handle} className="dashbtnlogout">
   
 
     logOut
