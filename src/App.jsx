@@ -20,8 +20,6 @@ const App = () => {
         </Routes>
       </Router>
     </div>
-
-
     </div>
   )
 }
